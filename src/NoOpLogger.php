@@ -1,94 +1,102 @@
 <?php
 
 /**
- * This file is part of the Contao Community Alliance Build System tools.
+ * This file is part of bit3/no-op-logger.
  *
- * @copyright 2014 Contao Community Alliance <https://c-c-a.org>
- * @author    Tristan Lins <t.lins@c-c-a.org>
- * @package   contao-community-alliance/build-system-logger
- * @license   MIT
- * @link      https://c-c-a.org
+ * (c) 2014 Tristan Lins <tristan@lins.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * This project is provided in good faith and hope to be usable by anyone.
+ *
+ * @package    bit3/no-op-logger
+ * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
+ * @author     Tristan Lins <tristan.lins@bit3.de>
+ * @copyright  2014 Tristan Lins <tristan@lins.io>
+ * @link       https://github.com/bit3/no-op-logger
+ * @license    https://github.com/bit3/no-op-logger/blob/master/LICENSE MIT
+ * @filesource
  */
 
-namespace ContaoCommunityAlliance\BuildSystem;
+namespace Bit3\NoOpLogger;
 
 use Psr\Log\LoggerInterface;
 
 /**
- * A no-operation logger.
+ * A no-operation PSR-3 logger.
  */
 class NoOpLogger implements LoggerInterface
 {
-	/**
-	 * {@inheritdoc}
-	 */
-	public function emergency($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function emergency($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function alert($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function alert($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function critical($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function critical($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function error($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function error($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function warning($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function warning($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function notice($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function notice($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function info($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function info($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function debug($message, array $context = array())
-	{
-		// no-op
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function debug($message, array $context = array())
+    {
+        // no-op
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function log($level, $message, array $context = array())
-	{
-		// no-op
-	}
-
+    /**
+     * {@inheritdoc}
+     */
+    public function log($level, $message, array $context = array())
+    {
+        // no-op
+    }
 }

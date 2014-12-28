@@ -1,19 +1,30 @@
 {
-	"name": "contao-community-alliance/build-system-logger",
-	"description": "Loggers for CCABS.",
-	"license": "MIT",
-	"minimum-stability": "dev",
-	"require": {
-		"psr/log": "~1.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"ContaoCommunityAlliance\\BuildSystem\\": "src"
-		}
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0.x-dev"
-		}
-	}
+    "name": "bit3/no-op-logger",
+    "description": "A no-operation PSR-3 logger.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tristan Lins",
+            "email": "tristan@lins.io",
+            "homepage": "https://tristan.lins.io",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/bit3/no-op-logger/issues",
+        "source": "https://github.com/bit3/no-op-logger"
+    },
+    "require": {
+        "psr/log": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bit3\\NoOpLogger\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
